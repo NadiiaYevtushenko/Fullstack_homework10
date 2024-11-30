@@ -24,6 +24,9 @@
 }
 
 html {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
   font-size: var(--font-size);
   font-family: var(--font-family);
   font-weight: 400;
@@ -181,7 +184,9 @@ a {
 
 .experience-item {
   display: flex;
-  gap: 49px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 10px;
 }
 
 .experience-item__number {
@@ -257,15 +262,8 @@ a {
   }
 
   .experience__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--gap-lg);
-  }
-
-  .experience-item {
-    flex-basis: calc(25% - var(--gap-lg));
-    /* Чотири елементи в ряд */
   }
 }
 
@@ -278,7 +276,6 @@ a {
 
   .content__title {
     font-size: 2.5rem;
-    /* Зменшуємо заголовок */
     line-height: 1.2;
   }
 
@@ -288,14 +285,8 @@ a {
     gap: var(--gap-md);
   }
 
-  .experience-item {
-    flex-basis: calc(50% - var(--gap-md));
-    /* Два елементи в ряд */
-  }
-
   .video__iframe {
     height: 400px;
-    /* Менша висота для відео */
   }
 }
 
@@ -315,10 +306,6 @@ a {
     gap: var(--gap-sm);
   }
 
-  .experience-item {
-    flex-basis: 100%;
-  }
-
   .footer {
     padding: 10px 0;
     text-align: center;
@@ -327,7 +314,6 @@ a {
 
   .video__iframe {
     height: 250px;
-    /* Найменша висота відео */
   }
 
   .navbar__list {
