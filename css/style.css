@@ -65,6 +65,7 @@ a {
 
 .navbar__list {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gap-lg)
 }
 
@@ -280,9 +281,18 @@ a {
   }
 
   .experience__container {
-    flex-direction: row;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     gap: var(--gap-md);
+  }
+
+
+  .experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .video__iframe {
@@ -304,6 +314,7 @@ a {
   .experience__container {
     flex-direction: column;
     gap: var(--gap-sm);
+    justify-content: center;
   }
 
   .footer {
